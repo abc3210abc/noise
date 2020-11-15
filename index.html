@@ -12,23 +12,23 @@
 			height: min(calc(90vw - 16px), calc(90vh - 16px));
 			border: solid;
 		}
-		#cnv, #ui {
-			display: block;
-			position: relative;
+		#ui * {
+			
 		}
 	</style>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
 	<canvas id="cnv" width="1024" height="1024"></canvas>
 	<div id="ui">
-		<label>Зерно:                <input type="number" id="seed_input" value=""></label>
-		<label>Количество элементов: <input type="number" id="res_input" value="1024"></label>
-		<label>Стойкость:            <input type="number" id="pers_input" value="0.5"></label>
-		<label>Первая октава:        <input type="number" id="minoct_input" value="0"></label>
-		<label>Последняя октава:     <input type="number" id="maxoct_input" value="9"></label>
+		<label>Зерно:                <input type="number" id="seed_input" value=""></label><br>
+		<label>Количество элементов: <input type="number" id="res_input" value="1024"></label><br>
+		<label>Стойкость:            <input type="number" id="pers_input" value="0.5"></label><br>
+		<label>Первая октава:        <input type="number" id="minoct_input" value="0"></label><br>
+		<label>Последняя октава:     <input type="number" id="maxoct_input" value="9"></label><br>
 
-		<input type="button" value="Старт" onclick="runNoise()">
+		<input type="button" value="Старт" onclick="runNoise()"><br>
 
 		<label>Время: <output id="time_output"></output> мс</label>
 	</div>
