@@ -1,5 +1,5 @@
 var seed = Date.now(),
-	res = 10,
+	res = 9,
 	pers = .5,
 	minoct = 0,
 	maxoct = 9;

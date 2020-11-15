@@ -40,7 +40,7 @@ function drawCanvas(data) {
         ctx.lineTo(i / data.length * cnv.width, (-data[i] + 1) * cnv.height);
     ctx.stroke();
 }
-var seed = Date.now(), res = 10, pers = .5, minoct = 0, maxoct = 9;
+var seed = Date.now(), res = 9, pers = .5, minoct = 0, maxoct = 9;
 const lerp = (x, y0, y1) => (y1 - y0) * x + y0;
 function random(seed) {
     return (1103515245 * seed + 12345) % 2147483648;
