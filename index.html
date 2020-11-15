@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>Одномерный когерентный шум</title>
+	<script defer src='script.js'></script>
+	<style>
+		#cnv {
+			/* image-rendering: pixelated; */
+			width:  min(calc(90vw - 16px), calc(90vh - 16px));
+			height: min(calc(90vw - 16px), calc(90vh - 16px));
+			border: solid;
+		}
+		#cnv, #ui {
+			display: block;
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="cnv" width="1024" height="1024"></canvas>
+	<div id="ui">
+		<label>Зерно:                <input type="number" id="seed_input" value=""></label>
+		<label>Количество элементов: <input type="number" id="res_input" value="1024"></label>
+		<label>Стойкость:            <input type="number" id="pers_input" value="0.5"></label>
+		<label>Первая октава:        <input type="number" id="minoct_input" value="0"></label>
+		<label>Последняя октава:     <input type="number" id="maxoct_input" value="9"></label>
+
+		<input type="button" value="Старт" onclick="runNoise()">
+
+		<label>Время: <output id="time_output"></output> мс</label>
+	</div>
+</body>
+
+</html>

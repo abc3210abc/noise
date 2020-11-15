@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "none",
+		//"sourceMap": true,
+		"outFile": "./script.js",
+		"strict": true,
+		"removeComments": true
+	}
+}
