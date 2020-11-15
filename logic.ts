@@ -2,7 +2,7 @@ var seed = Date.now(),
 	res = 9,
 	pers = .5,
 	minoct = 0,
-	maxoct = 9;
+	maxoct = 8;
 
 // линейная интерполяция
 const lerp = (x: number, y0: number, y1: number) => (y1 - y0) * x + y0;
